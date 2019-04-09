@@ -1,0 +1,1 @@
+/* JavaScript for timeout to attract loop */
