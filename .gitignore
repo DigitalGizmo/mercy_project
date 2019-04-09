@@ -1,0 +1,15 @@
+# extensions
+*.log
+*.jpg
+*.png
+*.gif
+
+# files
+.DS_Store
+robots.txt
+
+# directories
+**/.sass-cache
+**/.sass-cache/*
+
+# allow
