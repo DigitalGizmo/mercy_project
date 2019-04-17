@@ -3,6 +3,7 @@
 *.jpg
 *.png
 *.gif
+*.mp4
 
 # files
 .DS_Store
@@ -11,5 +12,6 @@ robots.txt
 # directories
 **/.sass-cache
 **/.sass-cache/*
-
+images/
+media/
 # allow
