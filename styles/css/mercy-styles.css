@@ -6,7 +6,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Fontin", Optima, Serif;
   font-size: 1.25em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -103,7 +103,7 @@ html {
 
 body {
   color: #eee;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Fontin", Optima, Serif;
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.6;
@@ -115,7 +115,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Fontin", Optima, Serif;
   line-height: 1.2;
   margin: 0 0 0.4em 0;
 }
