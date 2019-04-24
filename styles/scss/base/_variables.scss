@@ -30,17 +30,17 @@ $xlarge-spacing: $base-spacing * 4;
 // Colors
 $dark-gray: #444 !default;
 $medium-gray: #999;
-$light-gray: #eee;
+$light-gray: #e8e0d0;
 
 // Font Colors
 $base-font-color: $light-gray !default;
 $light-font-color: $medium-gray;
-$accent-color: #ff9933;
+$accent-color: $light-gray;
 $action-color: $light-gray;
 $hover-color: darken($accent-color, 25%);
 
 // Background Colors
-$base-background-color: maroon;
+$base-background-color: #500C14;
 
 // Borders
 $base-border-color: $light-gray;

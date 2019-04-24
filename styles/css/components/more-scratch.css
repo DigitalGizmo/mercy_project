@@ -1,0 +1,138 @@
+#attract-anim div img {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+div.photo1 {
+  position: relative;
+  -webkit-animation: photo1-anim 8s ease-in-out infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: photo1-anim 8s ease-in-out infinite;
+}
+
+div.photo2 {
+  position: relative;
+  -webkit-animation: photo2-anim 8s ease-in-out 4s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: photo2-anim 8s ease-in-out 4s infinite;
+  opacity: 0;
+}
+
+div.photo3 {
+  position: relative;
+  -webkit-animation: photo2-anim 8s ease-in-out 8s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: photo2-anim 8s ease-in-out 8s infinite;
+  opacity: 0;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes photo1-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* Standard syntax */
+@keyframes photo1-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes photo2-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* Standard syntax */
+@keyframes photo2-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes photo3-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* Standard syntax */
+@keyframes photo3-anim {
+  0% {
+    top: 0;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=more-scratch.css.map */
