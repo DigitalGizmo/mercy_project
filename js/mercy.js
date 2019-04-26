@@ -30,7 +30,8 @@ $(document).ready(function(){
 		  // to(photo1, 2, {autoAlpha:1})
 		  // start the positional tween at time of 0
 		  // x is left edge of photo
-		  .to(photo1, 10, {x:screenWidth + photo1.width(), ease:Linear.easeNone}, 0)
+		  // Fri 4/26 .to(photo1, 10, {x:screenWidth + photo1.width(), ease:Linear.easeNone}, 0)
+		  .to(photo1, 10, {x:screenWidth, ease:Linear.easeNone}, 0)
 		  // begin fade out 1 second before positional tween ends
 		  // .to(photo1, 2, {autoAlpha:.2}, "-=2")
 		  ;
@@ -44,7 +45,8 @@ $(document).ready(function(){
 		// console.log(" -- photo2 width: " + photo2.width());
 
 		tl.to(photo2, 4.5, {autoAlpha:1, repeat:1, yoyo:true})
-		  .to(photo2, 9, {x:screenWidth + photo2.width(), ease:Linear.easeNone}, 0);
+		  // Fri 4/26 .to(photo2, 9, {x:screenWidth + photo2.width(), ease:Linear.easeNone}, 0);
+		  .to(photo2, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
 
 		return tl;
 	}
@@ -54,7 +56,8 @@ $(document).ready(function(){
 		console.log(" -- screenWidth: " + screenWidth);
 		console.log(" -- photo2 width: " + photo2.width());
 		tl.to(photo3, 4.5, {autoAlpha:1, repeat:1, yoyo:true})
-		  .from(photo3, 9, {x:screenWidth + photo3.width(), ease:Linear.easeNone}, 0);
+		  // Fri 4/26 .from(photo3, 9, {x:screenWidth + photo3.width(), ease:Linear.easeNone}, 0);
+		  .from(photo3, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
 		  // .to(photo3, 9, {xPercent: -100, ease:Linear.easeNone}, 0);
 		  // .from(photo3, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
 
