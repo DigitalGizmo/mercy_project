@@ -14,9 +14,9 @@ $(document).ready(function(){
 	  // instantiate timeline
 	  const tl = new TimelineMax();
 	  // set initial
-	  tl.set(photo1, {autoAlpha: .1, xPercent: -100})
-	  	.set(photo2, {autoAlpha: .1, y:300, xPercent: -100})
-	  	.set(photo3, {autoAlpha: .1, y:100, xPercent: -100}) // , xPercent: -100
+	  tl.set(photo1, {autoAlpha: 0, xPercent: -100})
+	  	.set(photo2, {autoAlpha: 0, y:300, xPercent: -100})
+	  	.set(photo3, {autoAlpha: 0, y:100, xPercent: -100}) // , xPercent: -100
 	  	// .set(photo3, {autoAlpha: .1, y:100, x:screenWidth + photo3.width()}) // , xPercent: -100
 	  	;  
 	  // return timeline
