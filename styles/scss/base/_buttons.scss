@@ -46,11 +46,3 @@ a:hover {
   color: $hover-color;
   text-decoration: underline;
 }
-
-.main a {
-  color: $dark-gray;
-
-  &:hover {
-    color: $accent-color;
-  }
-}
