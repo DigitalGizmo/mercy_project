@@ -2,68 +2,41 @@
 
 $(document).ready(function(){
 
-	const photo1 = $('#photo1'),
-		photo2 = $('#photo2'),
-		photo3 = $('#photo3')
-		;
-
+	const photos = [$('#photo1'), $('#photo2'), $('#photo3'), 
+		$('#photo4'), $('#photo5'), $('#photo6')];
 	var screenWidth = $(window).width();
+	const speedFactor = 3;
 
 	// first timeline inside setup() function
 	function setup() {
 	  // instantiate timeline
 	  const tl = new TimelineMax();
 	  // set initial
-	  tl.set(photo1, {autoAlpha: 0, xPercent: -100})
-	  	.set(photo2, {autoAlpha: 0, y:300, xPercent: -100})
-	  	.set(photo3, {autoAlpha: 0, y:100, xPercent: -100}) // , xPercent: -100
-	  	// .set(photo3, {autoAlpha: .1, y:100, x:screenWidth + photo3.width()}) // , xPercent: -100
+	  tl.set(photos[0], {autoAlpha: 0, xPercent: -100})
+	  	.set(photos[1], {autoAlpha: 0, y:200, xPercent: -100})
+	  	.set(photos[2], {autoAlpha: 0, y:90, xPercent: -100})
+	  	.set(photos[3], {autoAlpha: 0, y:140, xPercent: -100})
+	  	.set(photos[4], {autoAlpha: 0, y:10, xPercent: -100})
+	  	.set(photos[5], {autoAlpha: 0, y:100, xPercent: -100})
+	  	// .set(photo3, {autoAlpha: .1, y:100, x:screenWidth + photo3.width()}) 
 	  	;  
 	  // return timeline
 	  return tl;
 	}
 
-
-	function movePhoto1() {
-		var tl = new TimelineMax(0);
-		tl.to(photo1, 5, {autoAlpha:1, repeat:1, yoyo:true})
-		  // to(photo1, 2, {autoAlpha:1})
-		  // start the positional tween at time of 0
-		  // x is left edge of photo
-		  // Fri 4/26 .to(photo1, 10, {x:screenWidth + photo1.width(), ease:Linear.easeNone}, 0)
-		  .to(photo1, 10, {x:screenWidth, ease:Linear.easeNone}, 0)
-		  // begin fade out 1 second before positional tween ends
-		  // .to(photo1, 2, {autoAlpha:.2}, "-=2")
-		  ;
+	function movePhoto(photoIndex, delaySecs, durationSecs, forward) {
+		var tl = new TimelineMax({delay:delaySecs}, 0);
+		// start the positional tween at time of 0
+		// x is left edge of photo
+		if (forward) {
+			tl.to(photos[photoIndex], (durationSecs/2), {autoAlpha:1, repeat:1, yoyo:true})
+			  .to(photos[photoIndex], durationSecs, {x:screenWidth, ease:Linear.easeNone}, 0);
+		} else {
+			tl.to(photos[photoIndex], (durationSecs/2), {autoAlpha:1, repeat:1, yoyo:true})
+			  .from(photos[photoIndex], durationSecs, {x:screenWidth, ease:Linear.easeNone}, 0);
+		}
 		return tl;
 	}
-
-	function movePhoto2() {
-		var tl = new TimelineMax({delay:2}, 0);
-		
-		// console.log(" -- screenWidth: " + screenWidth);
-		// console.log(" -- photo2 width: " + photo2.width());
-
-		tl.to(photo2, 4.5, {autoAlpha:1, repeat:1, yoyo:true})
-		  // Fri 4/26 .to(photo2, 9, {x:screenWidth + photo2.width(), ease:Linear.easeNone}, 0);
-		  .to(photo2, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
-
-		return tl;
-	}
-
-	function movePhoto3() {
-		var tl = new TimelineMax({delay:4}, 0);
-		console.log(" -- screenWidth: " + screenWidth);
-		console.log(" -- photo2 width: " + photo2.width());
-		tl.to(photo3, 4.5, {autoAlpha:1, repeat:1, yoyo:true})
-		  // Fri 4/26 .from(photo3, 9, {x:screenWidth + photo3.width(), ease:Linear.easeNone}, 0);
-		  .from(photo3, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
-		  // .to(photo3, 9, {xPercent: -100, ease:Linear.easeNone}, 0);
-		  // .from(photo3, 9, {x:screenWidth, ease:Linear.easeNone}, 0);
-
-		return tl;
-	}
-
 
 	// instantiate master timeline
 	var master = new TimelineMax({repeat:2} );
@@ -71,8 +44,13 @@ $(document).ready(function(){
 	// add labels for better master timeline control
 
 	master.add(setup())
-		.add(movePhoto1(), 0)
-		.add(movePhoto2(), 0)
-		.add(movePhoto3(), 0);
+		// photoIndex, delaySecs, durationSecs, forward
+		.add(movePhoto(0, (0 * speedFactor), (4 * speedFactor), true), 0)
+		.add(movePhoto(1, (2 * speedFactor), (3.5 * speedFactor), true), 0)
+		.add(movePhoto(2, (4 * speedFactor), (4 * speedFactor), false), 0)
+		.add(movePhoto(3, (5 * speedFactor), (4 * speedFactor), true), 0)
+		.add(movePhoto(4, (7 * speedFactor), (4.5 * speedFactor), false), 0)
+		.add(movePhoto(5, (8 * speedFactor), (4 * speedFactor), true), 0)
+		;
 
 }); // end doc ready
