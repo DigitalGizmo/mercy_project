@@ -22,7 +22,8 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  margin: 0 0 $tiny-spacing 0;
+  margin: 0;
+  //margin: 0 0 $tiny-spacing 0;
 }
 
 p {
@@ -60,11 +61,6 @@ blockquote {
 
 h1 {
   font-size: 4em;
-}
-
-h1.attract {
-  padding: .5em 0;
-  background-color: darken($base-background-color, 3%)
 }
 
 h3 {
