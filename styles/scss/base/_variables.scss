@@ -30,20 +30,20 @@ $xlarge-spacing: $base-spacing * 4;
 // Colors
 $dark-gray: #444 !default;
 $medium-gray: #999;
-$light-gray: #e8e0d0;
+$beige: #e8e0d0;
 
 // Font Colors
-$base-font-color: $light-gray !default;
+$base-font-color: $beige !default;
 $light-font-color: $medium-gray;
-$accent-color: $light-gray;
-$action-color: $light-gray;
+$accent-color: $beige;
+$action-color: $beige;
 $hover-color: darken($accent-color, 25%);
 
 // Background Colors
 $base-background-color: #500C14;
 
 // Borders
-$base-border-color: $light-gray;
+$base-border-color: $beige;
 $base-border: 1px solid $base-border-color;
 $darker-border: 1px solid $medium-gray;
 
