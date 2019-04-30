@@ -20,12 +20,12 @@ $(document).ready(function(){
 	  // instantiate timeline
 	  const tl = new TimelineMax();
 	  // set initial
-	  tl.set(photos[0], {autoAlpha: 0, y:20, xPercent: -100})
-	  	.set(photos[1], {autoAlpha: 0, y:320, xPercent: -100})
-	  	.set(photos[2], {autoAlpha: 0, y:110, xPercent: -100})
-	  	.set(photos[3], {autoAlpha: 0, y:240, xPercent: -100})
-	  	.set(photos[4], {autoAlpha: 0, y:10, xPercent: -100})
-	  	.set(photos[5], {autoAlpha: 0, y:200, xPercent: -100})
+	  tl.set(photos[0], {autoAlpha: 0, yPercent:10, xPercent: -100})
+	  	.set(photos[1], {autoAlpha: 0, yPercent:70, xPercent: -100})
+	  	.set(photos[2], {autoAlpha: 0, yPercent:20, xPercent: -100})
+	  	.set(photos[3], {autoAlpha: 0, yPercent:55, xPercent: -100})
+	  	.set(photos[4], {autoAlpha: 0, yPercent:15, xPercent: -100})
+	  	.set(photos[5], {autoAlpha: 0, yPercent:45, xPercent: -100})
 	  	// .set(photo3, {autoAlpha: .1, y:100, x:screenWidth + photo3.width()}) 
 	  	;  
 	  // return timeline
