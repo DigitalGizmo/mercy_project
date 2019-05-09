@@ -169,8 +169,6 @@ body {
 .wrapper-attract {
   background-color: #500C14;
   margin: 0px;
-  position: relative;
-  text-align: center;
 }
 .wrapper-attract h1.attract {
   padding: .5em 0;
@@ -189,6 +187,7 @@ body {
 }
 .wrapper-attract h1.attract a {
   color: #e8e0d0;
+  padding: 10px 0;
 }
 .wrapper-attract h1.attract a:active, .wrapper-attract h1.attract a:visited, .wrapper-attract h1.attract a:focus, .wrapper-attract h1.attract a:hover {
   color: #bea87a;

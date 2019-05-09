@@ -6,8 +6,6 @@ body {
 .wrapper-attract {
 	background-color: #500C14;
 	margin: 0px;
-	position: relative;
-	text-align: center;
 	
 	h1.attract {
 		padding: .5em 0;
@@ -21,12 +19,13 @@ body {
 	
 		a {
 			color: $action-color;
+			padding: 10px 0;
 
 			&:active,
 			&:visited,
 			&:focus,
 			&:hover {
-			color: $hover-color;
+				color: $hover-color;
   			}
 		}
 
