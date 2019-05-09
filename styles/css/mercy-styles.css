@@ -187,6 +187,12 @@ body {
   /* IE6-9 */
   border-bottom: 1px solid #87535c;
 }
+.wrapper-attract h1.attract a {
+  color: #e8e0d0;
+}
+.wrapper-attract h1.attract a:active, .wrapper-attract h1.attract a:visited, .wrapper-attract h1.attract a:focus, .wrapper-attract h1.attract a:hover {
+  color: #bea87a;
+}
 
 .wrapper {
   display: grid;
@@ -252,8 +258,9 @@ body {
   grid-row: 3;
 }
 .btm-nav p {
-  text-align: center;
   font-size: 2em;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 #attract-anim {

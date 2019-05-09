@@ -18,6 +18,18 @@ body {
 		background: linear-gradient(to bottom, #500c14 24%,#6d2c35 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#500c14', endColorstr='#6d2c35',GradientType=0 ); /* IE6-9 */
 		border-bottom: 1px solid #87535c;
+	
+		a {
+			color: $action-color;
+
+			&:active,
+			&:visited,
+			&:focus,
+			&:hover {
+			color: $hover-color;
+  			}
+		}
+
 	}
 }
 
@@ -84,7 +96,8 @@ body {
 	grid-row: 3;
 
 	p 	{
-		text-align: center;
 		font-size: 2em;
+		margin-bottom: 0;
+		text-align: center;
 	}
 }
