@@ -97,7 +97,7 @@ html {
 body {
   color: #e8e0d0;
   font-family: "Fontin", Optima, Serif;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -212,7 +212,7 @@ body {
   /* IE6-9 */
   border-bottom: 1px solid #87535c;
   grid-row: 1;
-  padding-top: 1.2em;
+  padding-top: 0.75em;
 }
 
 .video-menu {
